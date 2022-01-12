@@ -1,0 +1,16 @@
+html{
+    background: linear-gradient(45deg, rgb(201, 201, 243), rgb(248, 244, 244));
+}
+
+.email_sign_up{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.email_sign_up input {
+    width: 220px;
+    height: 30px;
+    margin: 5px;
+}

@@ -1,0 +1,28 @@
+.header {
+    background-image: url("./banner.png");
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+    padding-top: 30px;
+    padding-left: 30px;
+    /* width: 95%;
+    top: 30px;
+    justify-content: center;
+    padding-top: 30px; 
+    padding-left: 30px;
+    background-image: url("./banner.png");
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 60px;
+    position: relative; */
+}
+.logo {
+    background-image: url('./header_logo.png');
+    height: 75px;
+    padding-left: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
