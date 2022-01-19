@@ -14,29 +14,12 @@ import Results from '../views/results';
 import EmailList from '../views/emailList';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';  //use browserRouter, hashrouter is for github pages
 import { NavLink } from 'react-router-dom';
+import firebase from '../firebase';
 
 
 
 
 function App() {
-//     const [fname, setfname] = useState("");
-//     const [lname, setlname] = useState("");
-//     const [email, setemail] = useState("");
-//     const [emailList, setEmailList] = useState([]);
-
-// //     useEffect(()=> {
-// //         Axios.get('http://localhost:3001/api/get').then((response) => {
-// //             console.log(response.data);
-// //         });
-// //     }), [];
-
-//     // const submitEmail = () => {
-//     //     Axios.post('http://localhost:3001/api/insert', {fname: fname, lname: lname, email: email}).then(()=> {
-//     //         // alert("sussesful insert");
-//     //         setEmailList(response.data)
-//     //     });
-//     // };
-
     return(
         <Router>
             <div className="app">
@@ -85,6 +68,10 @@ function App() {
                     <label>Email Address:</label>
                     <input type="text" name="email" placeholder="email"/>
                     <NavLink to="/emailList" className='nav-item' activeClassName='is-active'>Email List</NavLink>
+
+                </div>
+                <div className='database'>
+                
 
                 </div>
                 < Footer />
