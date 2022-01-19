@@ -71,14 +71,15 @@ function App() {
                     </Switch>
                 </div>
                 <div className='email_sign_up'>
-                    {/* Sign up for our emails!<br /><br />
+                    Sign up for our emails!<br /><br />
                     <label>First Name:</label>
-                    <input type="text" name="fname" onChange={(e)=>{setfname(e.target.value)}} />
+                    <input type="text" name="fname" />
                     <label>Last Name:</label>
-                    <input type="text" name="lname" onChange={(e)=>{setlname(e.target.value)}} />
+                    <input type="text" name="lname" /> 
                     <label>Email Address:</label>
-                    <input type="text" name="email" onChange={(e)=>{setemail(e.target.value)}} /> */}
-                    {/* <button onClick={submitEmail}>Add</button> */}
+                    <input type="text" name="email" />
+                    {/* <button onClick={submitEmail}>Add</button> 
+                    onChange={(e)=>{setfname(e.target.value)}} */}
 
                     {/* use linode it is cheap express firebase */}
 {/* 
