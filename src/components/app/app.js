@@ -11,7 +11,10 @@ import Alpine from '../views/alpine';
 import Canyons from '../views/canyons';
 import Midway from '../views/midway';
 import Results from '../views/results';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import EmailList from '../views/emailList';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';  //use browserRouter, hashrouter is for github pages
+import { NavLink } from 'react-router-dom';
+
 
 
 
@@ -68,29 +71,21 @@ function App() {
                         <Route path="/results">
                             <Results />
                         </Route> 
+                        <Route path="/emailList">
+                            <EmailList />
+                        </Route>
                     </Switch>
                 </div>
                 <div className='email_sign_up'>
                     Sign up for our emails!<br /><br />
                     <label>First Name:</label>
-                    <input type="text" name="fname" />
+                    <input type="text" name="fname" placeholder="First Name"/>
                     <label>Last Name:</label>
-                    <input type="text" name="lname" /> 
+                    <input type="text" name="lname" placeholder="Last name"/> 
                     <label>Email Address:</label>
-                    <input type="text" name="email" />
-                    {/* <button onClick={submitEmail}>Add</button> 
-                    onChange={(e)=>{setfname(e.target.value)}} */}
+                    <input type="text" name="email" placeholder="email"/>
+                    <NavLink to="/emailList" className='nav-item' activeClassName='is-active'>Email List</NavLink>
 
-                    {/* use linode it is cheap express firebase */}
-{/* 
-                    {emailList.map((val)=> {
-                        return (
-
-                         <h1>
-                             First Name: {val.fname} | Last Name: {val.lname} | Email: {val.email}
-                             </h1>
-                        );
-                    })} */}
                 </div>
                 < Footer />
             </div>
