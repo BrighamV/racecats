@@ -60,7 +60,7 @@ function App() {
                     </Switch>
                 </div>
                 <div className='email_sign_up'>
-                    Sign up for our emails!<br /><br />
+                    Sign up for our emails!!!<br /><br />
                     <label>First Name:</label>
                     <input type="text" name="fname" placeholder="First Name"/>
                     <label>Last Name:</label>
