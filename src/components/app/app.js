@@ -14,12 +14,12 @@ import Results from '../views/results';
 import EmailList from '../views/emailList';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';  //use browserRouter, hashrouter is for github pages
 import { NavLink } from 'react-router-dom';
-import firebase from '../firebase';
 
 
 
 
 function App() {
+    
     return(
         <Router>
             <div className="app">
@@ -60,7 +60,7 @@ function App() {
                     </Switch>
                 </div>
                 <div className='email_sign_up'>
-                    Sign up for our emails!!!<br /><br />
+                    Sign up for our emails!!<br /><br />
                     <label>First Name:</label>
                     <input type="text" name="fname" placeholder="First Name"/>
                     <label>Last Name:</label>
@@ -81,3 +81,5 @@ function App() {
 }
 
 export default App;
+
+// npm run deploy will update to gh-pages branch resulting in updating on web.
