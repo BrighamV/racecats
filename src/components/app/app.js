@@ -14,12 +14,40 @@ import Results from '../views/results';
 import EmailList from '../views/emailList';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';  //use browserRouter, hashrouter is for github pages
 import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import firebase from './firebase';
 
 
 
 
 function App() {
-    
+    const [athlete, setAthlete] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    const ref = firebase.firestore().collection("athlete");
+
+    function getAthlete() {
+        setLoading(true);
+        ref.onSnapshot((querySnapshot) => {
+            const items = [];
+            querySnapshot.forEach((doc) => {
+                items.push(doc.data());
+            });
+            console.log("here in get athlete");
+            console.log(items);
+            setAthlete(items);
+            setLoading(false);
+        });
+    }
+
+    useEffect(() => {
+        getAthlete();
+    }, []);
+
+    if (loading) {
+        return <h1>Loading...</h1>
+    }
+
     return(
         <Router>
             <div className="app">
@@ -60,7 +88,7 @@ function App() {
                     </Switch>
                 </div>
                 <div className='email_sign_up'>
-                    Sign up for our emails!!<br /><br />
+                    Sign up for our emails!<br /><br />
                     <label>First Name:</label>
                     <input type="text" name="fname" placeholder="First Name"/>
                     <label>Last Name:</label>
@@ -71,7 +99,16 @@ function App() {
 
                 </div>
                 <div className='database'>
-                
+                    <h1>Athletes</h1>
+                    <p>d{athlete}</p>
+                    {athlete.map((person) => (
+
+                        <div key={person.id}>
+                            <h2> ..name goes here.{person.fname} {person.lname}</h2>
+                            <p>{person.email}</p>
+
+                        </div>
+                    ))}
 
                 </div>
                 < Footer />
