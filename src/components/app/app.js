@@ -1,6 +1,7 @@
 import './app.css';
 import Header from '../header/header.js';
 import Nav from '../nav/nav.js';
+import Email from '../email/email';
 import Footer from '../footer/footer';
 import Home from '../views/home';
 import Contact from '../views/contact';
@@ -19,34 +20,25 @@ import firebase from './firebase';
 
 
 
-
 function App() {
-    const [athlete, setAthlete] = useState([]);
-    const [loading, setLoading] = useState(false);
-
-    const ref = firebase.firestore().collection("athlete");
-
-    function getAthlete() {
-        setLoading(true);
-        ref.onSnapshot((querySnapshot) => {
-            const items = [];
-            querySnapshot.forEach((doc) => {
-                items.push(doc.data());
-            });
-            console.log("here in get athlete");
-            console.log(items);
-            setAthlete(items);
-            setLoading(false);
+   
+    const add = () => {
+        console.log("made it to add");
+        let fname = document.getElementById("fname").value;
+        let lname = document.getElementById("lname").value;
+        let email = document.getElementById("email").value;
+        console.log(fname);
+        console.log(lname);
+        console.log(email);
+        const db = firebase.firestore();
+        // db.collection("Athlete").doc().set()
+        db.collection('Athlete').add({         // add adds to the database
+            fname: fname,
+            lname: lname,
+            email: email
         });
     }
-
-    useEffect(() => {
-        getAthlete();
-    }, []);
-
-    if (loading) {
-        return <h1>Loading...</h1>
-    }
+    
 
     return(
         <Router>
@@ -87,36 +79,14 @@ function App() {
                         </Route>
                     </Switch>
                 </div>
-                <div className='email_sign_up'>
-                    Sign up for our emails!<br /><br />
-                    <label>First Name:</label>
-                    <input type="text" name="fname" placeholder="First Name"/>
-                    <label>Last Name:</label>
-                    <input type="text" name="lname" placeholder="Last name"/> 
-                    <label>Email Address:</label>
-                    <input type="text" name="email" placeholder="email"/>
-                    <NavLink to="/emailList" className='nav-item' activeClassName='is-active'>Email List</NavLink>
 
-                </div>
-                <div className='database'>
-                    <h1>Athletes</h1>
-                    <p>d{athlete}</p>
-                    {athlete.map((person) => (
-
-                        <div key={person.id}>
-                            <h2> ..name goes here.{person.fname} {person.lname}</h2>
-                            <p>{person.email}</p>
-
-                        </div>
-                    ))}
-
-                </div>
+                < Email add={add}/>
                 < Footer />
             </div>
         </Router>
+        
     )
 }
-
 export default App;
 
 // npm run deploy will update to gh-pages branch resulting in updating on web.
