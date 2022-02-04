@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.css": "/racecats/static/css/main.d26e6381.chunk.css",
-    "main.js": "/racecats/static/js/main.e0696508.chunk.js",
-    "main.js.map": "/racecats/static/js/main.e0696508.chunk.js.map",
-    "runtime-main.js": "/racecats/static/js/runtime-main.a1e9172f.js",
-    "runtime-main.js.map": "/racecats/static/js/runtime-main.a1e9172f.js.map",
-    "static/js/2.79f15548.chunk.js": "/racecats/static/js/2.79f15548.chunk.js",
-    "static/js/2.79f15548.chunk.js.map": "/racecats/static/js/2.79f15548.chunk.js.map",
+    "main.css": "/racecats/static/css/main.7ea7258e.css",
+    "main.js": "/racecats/static/js/main.1eeaaa1e.js",
+    "static/media/banner.png": "/racecats/static/media/banner.31e417424a8bf2c1a2c0.png",
+    "static/media/runner.png": "/racecats/static/media/runner.e94743486e7e0fa0557f.png",
+    "static/media/header_logo.png": "/racecats/static/media/header_logo.b949321181ec4f05acf2.png",
+    "static/media/insta.png": "/racecats/static/media/insta.49779738c8e4a00312c4.png",
+    "static/media/face.png": "/racecats/static/media/face.4688f72d9a631a277b98.png",
     "index.html": "/racecats/index.html",
-    "static/css/main.d26e6381.chunk.css.map": "/racecats/static/css/main.d26e6381.chunk.css.map",
-    "static/js/2.79f15548.chunk.js.LICENSE.txt": "/racecats/static/js/2.79f15548.chunk.js.LICENSE.txt",
-    "static/media/header.css": "/racecats/static/media/header_logo.b9493211.png",
-    "static/media/footer.css": "/racecats/static/media/runner.e9474348.png"
+    "main.7ea7258e.css.map": "/racecats/static/css/main.7ea7258e.css.map",
+    "main.1eeaaa1e.js.map": "/racecats/static/js/main.1eeaaa1e.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.a1e9172f.js",
-    "static/js/2.79f15548.chunk.js",
-    "static/css/main.d26e6381.chunk.css",
-    "static/js/main.e0696508.chunk.js"
+    "static/css/main.7ea7258e.css",
+    "static/js/main.1eeaaa1e.js"
   ]
 }
