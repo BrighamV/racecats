@@ -10,13 +10,13 @@ class Nav extends React.Component{
             <div>
                 <nav className='navbar'>
                     <ul>
-                        <li><NavLink to="/" className='nav-item' activeClassName='is-active'>Home</NavLink></li>
-                        <li><NavLink to="/teams" className='nav-item' activeClassName='is-active'>Teams</NavLink></li>
-                        <li><NavLink to="/results" className='nav-item' activeClassName='is-active'>Race Results</NavLink></li>
+                        <li><NavLink to="/" className='nav-item' >Home</NavLink></li>
+                        <li><NavLink to="/teams" className='nav-item' >Teams</NavLink></li>
+                        <li><NavLink to="/results" className='nav-item' >Race Results</NavLink></li>
                         <li>
-                            <a className='nav-item' activeClassName='is-active' href="https://racecats.org/shop/">Merch</a>
+                            <a className='nav-item'  href="https://racecats.org/shop/">Merch</a>
                         </li>
-                        <li><NavLink to="/contact" className='nav-item' activeClassName='is-active'>Contact Us</NavLink></li>
+                        <li><NavLink to="/contact" className='nav-item' >Contact Us</NavLink></li>
                     </ul>
                 </nav>
             </div>
