@@ -86,10 +86,11 @@ function App() {
     const show = () => {
 
         // console.log("made it to show");
+        
         const db = firebase.firestore();
         db.collection('Athlete').get().then((snapshot) => {   //get grabs the data from the database
             snapshot.docs.forEach(doc => {
-                // console.log("in loop")
+                console.log("in loop")
              display(doc);
 
                 })

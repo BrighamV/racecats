@@ -5,9 +5,9 @@ import App from './components/app/app';
 
 
 reactDom.render(
-  <React.StrictMode>
+  // <React.StrictMode>   // this was causing my get from the database twice. 
       <App />
-  </React.StrictMode>
+  // </React.StrictMode>
 
 
 , document.getElementById("root"))

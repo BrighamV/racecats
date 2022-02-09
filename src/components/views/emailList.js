@@ -32,8 +32,7 @@ import './main.css';
                 <p className="main-content"></p>
                 <div id="test"></div>
             </div>
-            {window.onload = show}
-            {/* {this.show()} */}
+            {show()}
         </div>
         )
     }
