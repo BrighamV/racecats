@@ -17,6 +17,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';  //use b
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import firebase from './firebase';
+import { QuerySnapshot } from '@firebase/firestore';
 
 
 
@@ -27,9 +28,9 @@ function App() {
         let fname = document.getElementById("fname").value;
         let lname = document.getElementById("lname").value;
         let email = document.getElementById("email").value;
-        console.log(fname);
-        console.log(lname);
-        console.log(email);
+        // console.log(fname);
+        // console.log(lname);
+        // console.log(email);
         const db = firebase.firestore();
         // db.collection("Athlete").doc().set()
         db.collection('Athlete').add({         // add adds to the database
@@ -38,6 +39,64 @@ function App() {
             email: email
         });
     }
+
+   const display = (doc) => {
+        const db = firebase.firestore();
+        // console.log("made it to display");
+        let display = document.getElementById("test");
+
+
+            // creating elements that will get inserted into our html
+            let li = document.createElement('li');
+            let fname = document.createElement('span');
+            let lname = document.createElement('span');
+            let email = document.createElement('span');
+            let cross =document.createElement('button');
+
+        
+            // adding info to our elements by grabbing data from our database
+            li.setAttribute('data-id', doc.id);
+            fname.textContent = doc.data().fname;
+            lname.textContent = doc.data().lname;
+            email.textContent = doc.data().email;
+            cross.textContent = ' delete ';
+
+        
+            // putting everything into a li
+            li.appendChild(fname);
+            li.appendChild(lname);
+            li.appendChild(email);
+            li.appendChild(cross);
+
+        
+            // put everything into our ul
+            display.appendChild(li);
+
+            //deleting data
+            cross.addEventListener('click', (e) => {
+                e.stopPropagation();
+                let id = e.target.parentElement.getAttribute('data-id');
+                db.collection('Athlete').doc(id).delete();
+             })
+
+             
+
+    }
+
+    const show = () => {
+
+        // console.log("made it to show");
+        const db = firebase.firestore();
+        db.collection('Athlete').get().then((snapshot) => {   //get grabs the data from the database
+            snapshot.docs.forEach(doc => {
+                // console.log("in loop")
+             display(doc);
+
+                })
+            })
+    }
+
+    
     
 
     return(
@@ -75,7 +134,7 @@ function App() {
                             <Results />
                         </Route> 
                         <Route path="/emailList">
-                            <EmailList />
+                            <EmailList show={show}/>
                         </Route>
                     </Switch>
                 </div>

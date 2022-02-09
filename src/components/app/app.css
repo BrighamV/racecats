@@ -14,3 +14,11 @@ html{
     height: 30px;
     margin: 5px;
 }
+
+span {
+    padding: 20px;
+}
+
+li {
+    text-decoration: none;
+}
