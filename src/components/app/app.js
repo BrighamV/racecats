@@ -53,6 +53,7 @@ function App() {
             let email = document.createElement('span');
             let cross =document.createElement('button');
 
+
         
             // adding info to our elements by grabbing data from our database
             li.setAttribute('data-id', doc.id);
@@ -60,6 +61,7 @@ function App() {
             lname.textContent = doc.data().lname;
             email.textContent = doc.data().email;
             cross.textContent = ' delete ';
+
 
         
             // putting everything into a li
