@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/racecats/static/css/main.7ea7258e.css",
-    "main.js": "/racecats/static/js/main.1eeaaa1e.js",
+    "main.css": "/racecats/static/css/main.50f56968.css",
+    "main.js": "/racecats/static/js/main.6f80f37e.js",
     "static/media/banner.png": "/racecats/static/media/banner.31e417424a8bf2c1a2c0.png",
     "static/media/runner.png": "/racecats/static/media/runner.e94743486e7e0fa0557f.png",
     "static/media/header_logo.png": "/racecats/static/media/header_logo.b949321181ec4f05acf2.png",
     "static/media/insta.png": "/racecats/static/media/insta.49779738c8e4a00312c4.png",
     "static/media/face.png": "/racecats/static/media/face.4688f72d9a631a277b98.png",
     "index.html": "/racecats/index.html",
-    "main.7ea7258e.css.map": "/racecats/static/css/main.7ea7258e.css.map",
-    "main.1eeaaa1e.js.map": "/racecats/static/js/main.1eeaaa1e.js.map"
+    "main.50f56968.css.map": "/racecats/static/css/main.50f56968.css.map",
+    "main.6f80f37e.js.map": "/racecats/static/js/main.6f80f37e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ea7258e.css",
-    "static/js/main.1eeaaa1e.js"
+    "static/css/main.50f56968.css",
+    "static/js/main.6f80f37e.js"
   ]
 }
