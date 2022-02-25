@@ -13,11 +13,13 @@ import Canyons from '../views/canyons';
 import Midway from '../views/midway';
 import Results from '../views/results';
 import EmailList from '../views/emailList';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';  //use browserRouter, hashrouter is for github pages
+import Login from '../views/login';
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';  //use browserRouter, hashrouter is for github pages
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import firebase from './firebase';
 import { QuerySnapshot } from '@firebase/firestore';
+import { render } from '@testing-library/react';
 
 
 
@@ -92,13 +94,38 @@ function App() {
         const db = firebase.firestore();
         db.collection('Athlete').get().then((snapshot) => {   //get grabs the data from the database
             snapshot.docs.forEach(doc => {
-                console.log("in loop")
+                // console.log("in loop")
              display(doc);
 
                 })
             })
     }
 
+    const check = () => {
+        const db = firebase.firestore();
+
+        console.log("made it to check");
+        
+        const usr = document.querySelector("#username").value;
+        const pass = document.querySelector("#password").value;
+        console.log(usr);
+        db.collection('coach').get().then((snapshot) => {   //get grabs the data from the database
+            snapshot.docs.forEach(doc => {
+                // console.log("in loop")
+             console.log(doc.data().username);
+             if (doc.data().username === usr && doc.data().password === pass) {
+                 console.log("usr is same")
+                 window.location = "/#/emailList";
+             } else {
+                 console.log("usr is diff")
+                 document.querySelector(".error").innerHTML = "Please enter a valid login";
+
+             }
+
+                })
+            })
+
+    }
     
     
 
@@ -136,6 +163,9 @@ function App() {
                         <Route path="/results">
                             <Results />
                         </Route> 
+                        <Route path="/login">
+                            <Login check={check}/>
+                        </Route>
                         <Route path="/emailList">
                             <EmailList show={show}/>
                         </Route>

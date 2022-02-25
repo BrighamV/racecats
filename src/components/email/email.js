@@ -16,7 +16,7 @@ import { NavLink } from 'react-router-dom';
             <label>Email Address:</label>
             <input type="text" id="email" name="email" placeholder="email"/>
             <button onClick={add}>Add</button>
-            <NavLink to="/emailList" className='nav-item' activeClassName='is-active'>Email List</NavLink>
+            <NavLink to="/login" className='nav-item' activeClassName='is-active'>Email List</NavLink>
              </div>
         )
     }
