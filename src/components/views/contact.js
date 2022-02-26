@@ -7,7 +7,7 @@ class Contact extends React.Component{
         return (
         
             <div className="content">
-            <h1>Contact us!</h1>
+            <h1>Contact us</h1>
             <div className="main-content-border">
                 Contact Jami Caldwell at jami.caldwell@gmail.com
                 

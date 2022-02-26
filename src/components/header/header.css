@@ -1,11 +1,11 @@
 .header {
-    background-image: url("./banner.png");
+    /* background-image: url("./banner.png");
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 250px;
     padding-top: 30px;
-    padding-left: 30px;
+    padding-left: 30px; */
     /* width: 95%;
     top: 30px;
     justify-content: center;
@@ -17,12 +17,26 @@
     background-size: cover;
     margin: 60px;
     position: relative; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 5px solid;
+}
+
+.contain{
+    padding: 30px;
 }
 .logo {
     background-image: url('./header_logo.png');
     height: 75px;
-    padding-left: 30px;
+    padding-left: 60px;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-left: 30px;
+    grid-column: 1/2;
+}
+
+.slogan {
+    grid-column: 2/3;
+    justify-self: right;
+    padding-right: 30px;
+    align-self: center;
 }

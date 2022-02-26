@@ -8,8 +8,10 @@ class Header extends React.Component{
     render() {
         return (
         <div className='header'>
-          
+          <div className='contain'>
             <div className='logo'></div>
+          </div>
+            <p className="slogan">HAVE FUN, WORK HARD, DREAM BIG...</p>
         </div>
         )
     }

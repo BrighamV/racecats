@@ -7,7 +7,7 @@ class Results extends React.Component{
         return (
 
             <div className="content">
-            <h1>Results!</h1>
+            <h1>Results</h1>
         
            
             <div className="main-content-border">
