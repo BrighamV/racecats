@@ -14,7 +14,7 @@ import './main.css';
             <input type="text" id="username" name="username" placeholder="ironman"/>
             <label>Password:</label>
             <input type="password" id="password" name="password" placeholder="*******"/> 
-            <button onClick={check}>Add</button>
+            <button onClick={check}>Login</button>
             </div>
 
         </div>

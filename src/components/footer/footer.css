@@ -1,10 +1,12 @@
 .footer {
-    top: 20000px;
+    margin-top: 260px;
     bottom: 20px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: beige;
+    background-color: rgb(170, 170, 165);
+    border-top: 3px solid;
+
 }
 .social {
     grid-column: 1/2;
@@ -33,21 +35,21 @@
     margin: 60px;
     position: relative;
 }
-.copy {
+.email {
+    padding-top: 5%;
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
 }
     
-.run {
+.copy {
     grid-column: 3/4;
     justify-self: center;
     align-self: center;
-    background-image: url("./runner.png");
-    padding-left: 300px;
+    /* padding-left: 300px;
     padding-top: 30px; 
     min-height: 250px;
     background-repeat: no-repeat;
     margin: 60px;
-    position: relative;
+    position: relative; */
 }

@@ -25,22 +25,22 @@ import { render } from '@testing-library/react';
 
 function App() {
    
-    const add = () => {
-        console.log("made it to add");
-        let fname = document.getElementById("fname").value;
-        let lname = document.getElementById("lname").value;
-        let email = document.getElementById("email").value;
-        // console.log(fname);
-        // console.log(lname);
-        // console.log(email);
-        const db = firebase.firestore();
-        // db.collection("Athlete").doc().set()
-        db.collection('Athlete').add({         // add adds to the database
-            fname: fname,
-            lname: lname,
-            email: email
-        });
-    }
+    // const add = () => {
+    //     console.log("made it to add");
+    //     let fname = document.getElementById("fname").value;
+    //     let lname = document.getElementById("lname").value;
+    //     let email = document.getElementById("email").value;
+    //     // console.log(fname);
+    //     // console.log(lname);
+    //     // console.log(email);
+    //     const db = firebase.firestore();
+    //     // db.collection("Athlete").doc().set()
+    //     db.collection('Athlete').add({         // add adds to the database
+    //         fname: fname,
+    //         lname: lname,
+    //         email: email
+    //     });
+    // }
 
    const display = (doc) => {
         const db = firebase.firestore();
@@ -172,7 +172,7 @@ function App() {
                     </Switch>
                 </div>
 
-                < Email add={add}/>
+                {/* < Email add={add}/> */}
                 < Footer />
             </div>
         </Router>

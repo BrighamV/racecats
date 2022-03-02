@@ -1,0 +1,33 @@
+.email_sign_up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.first {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: right;
+}
+.last {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: left;
+}
+.email_form {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    justify-self: right;
+}
+.add {
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}
+.add :visited {
+    color: black;
+}
+
+.list {
+    grid-column: 2/3;
+    text-decoration: none;
+}
+
