@@ -99,8 +99,8 @@ h1 {
 .davis{
     grid-column: 1/2;
     padding: 20px 40px;
-    border: 5px solid #ffa600;
-    background-color: #ffa600;
+    border: 5px solid #f3d033;
+    background-color: #dd5415;
     border-radius: 20px;
     box-shadow: 4px 4px 10px grey;
     width: 80%;
@@ -117,8 +117,8 @@ h1 {
 .harriman{
     grid-column: 2/3;
     padding: 20px 40px;
-    border: 5px solid #ffa600;
-    background-color: #ffa600;
+    border: 5px solid #f3d033;
+    background-color: #dd5415;
     border-radius: 20px;
     box-shadow: 4px 4px 10px grey;
     width: 80%;
@@ -133,8 +133,8 @@ h1 {
     grid-column: 1/2;
     grid-row: 2/3;
     padding: 20px 40px;
-    border: 5px solid #ffa600;
-    background-color: #ffa600;
+    border: 5px solid #f3d033;
+    background-color: #dd5415;
     border-radius: 20px;
     box-shadow: 4px 4px 10px grey;
     width: 80%;
@@ -149,8 +149,8 @@ h1 {
     grid-column: 2/3;
     grid-row: 2/3;
     padding: 20px 40px;
-    border: 5px solid #ffa600;
-    background-color: #ffa600;
+    border: 5px solid #f3d033;
+    background-color: #dd5415;
     border-radius: 20px;
     box-shadow: 4px 4px 10px grey;
     width: 80%;
@@ -165,8 +165,8 @@ h1 {
     grid-column: 1/2;
     grid-row: 3/4;
     padding: 20px 40px;
-    border: 5px solid #ffa600;
-    background-color: #ffa600;
+    border: 5px solid #f3d033;
+    background-color: #dd5415;
     border-radius: 20px;
     box-shadow: 4px 4px 10px grey;
     width: 80%;

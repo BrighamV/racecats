@@ -8,7 +8,7 @@ class Teams extends React.Component{
     render() {
         return (
         <div className="content">
-            <h1>Welcome to Race Cat!</h1>
+            <h1>Welcome to Race Cats</h1>
             <div className="main-content-border">
                 <p className="main-content"> Teams are set up by Geographical Location. Click on your team to find more information
                                             About your events and coaches!</p>
