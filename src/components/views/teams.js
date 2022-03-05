@@ -17,7 +17,7 @@ class Teams extends React.Component{
                 <div className="davis"><NavLink to="./davis" className="daviss">Davis County</NavLink></div>
 
                 <div className="harriman"><NavLink to="./Harriman" className="daviss">Harriman</NavLink></div>
-                <div className="canyons"><NavLink to="./canyons" className="daviss">canyons</NavLink></div>
+                <div className="canyons"><NavLink to="./canyons" className="daviss">Canyons</NavLink></div>
                 <div className="alpine"><NavLink to="./alpine" className="daviss">Alpine</NavLink></div>
                 <div className="midway"><NavLink to="./midway" className="daviss">Midway</NavLink></div>
             </div>

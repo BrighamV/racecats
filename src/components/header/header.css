@@ -17,6 +17,8 @@
     background-size: cover;
     margin: 60px;
     position: relative; */
+    background-color: rgb(170, 170, 165);
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: 3px solid;
