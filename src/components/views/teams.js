@@ -16,10 +16,10 @@ class Teams extends React.Component{
                 {/* <div className="davis">Davis County</div> */}
                 <div className="davis"><NavLink to="./davis" className="daviss">Davis County</NavLink></div>
 
-                <div className="harriman"><NavLink to="./Harriman" className="daviss">Harriman</NavLink></div>
-                <div className="canyons"><NavLink to="./canyons" className="daviss">Canyons</NavLink></div>
-                <div className="alpine"><NavLink to="./alpine" className="daviss">Alpine</NavLink></div>
-                <div className="midway"><NavLink to="./midway" className="daviss">Midway</NavLink></div>
+                <div className="herriman"><NavLink to="./Herriman" className="daviss">Herriman</NavLink></div>
+                <div className="parkCity"><NavLink to="./parkCity" className="daviss">Park City</NavLink></div>
+                <div className="alpine"><NavLink to="./alpine" className="daviss">Alpine/Highland</NavLink></div>
+                <div className="Tooele"><NavLink to="./Tooele" className="daviss">Tooele</NavLink></div>
             </div>
             </div>
            

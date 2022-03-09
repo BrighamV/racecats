@@ -5,32 +5,48 @@ class Alpine extends React.Component{
 
     render() {
         return (
-        <div className="content">
-            <h1>Davis County Race Cats team!</h1>
+            <div className="content">
+            <h1>Alpine/Highland Race Cats</h1>
             <div className="main-content-border">
-                <p className="main-content">                
+                <div className="main-content">
+                    <div className="one">
+                        <div className="shadow">
+                    <h2>2022 Alpine and Highland Race Cats Track program</h2>
+                    <h3>***There will be no Race Cats Team in this area for Track in the sprong of 2022***</h3>
+                    </div>
+                    </div>
+                    <div className="picture_one"></div>
+                    <div className="two">
+                        <div className="shadow">
+                    <h2>2022 Alpine and Highland Race Cats Cross Country Program</h2><br/><br/>
+                    <h3>Race schedule:</h3><br/>
+                    Details coming Summer 2022<br/><br/>
 
-                Races:<br /><br />
-                October 7th @ Nicholls Park<br /><br />
-                October 21st @ Nicholls Park<br /><br />
-                Race Cats Championship: October 30th Location TBD<br /><br />
-                </p>
-            </div>
-            <div className="registration">
-                <h2>Registration Open!</h2>
-                Davis County Area Elementary and Junior High Team Register HERE!
-                Competition Team ($220 for experienced or motivated runners in 3rd - 8th Grade)
-                 - Coach Jami Caldwell - Mon/Wed 4:30-5:30 at Nicholls Park PLUS trail runs 2X/month 
-                 (Register for the Competition team HERE).
 
- 
-            </div>
-            <div className="coaches">
-           
+                    </div>
+                    </div>
+                    <div className="picture_two"></div>
+                    <div className="three">
+                        <div className="shadow">
+                    
+                    
+                
+                    </div>
+                    </div>
+                    <div className="picture_three"></div>
+                    <div className="four">
+                        <div className="shadow">
+                    
+                    </div>
+                    </div>
+                    <h2>Race Cats Alpine/Highland Director</h2>
+                    <h3>Courtney Pugmire Meldrum</h3>                  
+                    <div className="picture_four"></div>
+
+                </div>
             </div>
             
-            <div className="map"></div>
-
+       
         </div>
         )
     }

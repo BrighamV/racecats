@@ -7,10 +7,10 @@ import Home from '../views/home';
 import Contact from '../views/contact';
 import Teams from '../views/teams';
 import Davis from '../views/davis';
-import Harriman from '../views/harriman';
+import Herriman from '../views/herriman';
 import Alpine from '../views/alpine';
-import Canyons from '../views/canyons';
-import Midway from '../views/midway';
+import ParkCity from '../views/parkCity';
+import Tooele from '../views/Tooele';
 import Results from '../views/results';
 import EmailList from '../views/emailList';
 import Login from '../views/login';
@@ -148,17 +148,17 @@ function App() {
                         <Route path="/davis">
                             <Davis />
                         </Route>
-                        <Route path="/harriman">
-                            <Harriman />
+                        <Route path="/herriman">
+                            <Herriman />
                         </Route>
                         <Route path="/alpine">
                             <Alpine />
                         </Route>
-                        <Route path="/canyons">
-                            <Canyons />
+                        <Route path="/parkCity">
+                            <ParkCity />
                         </Route>
-                        <Route path="/midway">
-                            <Midway />
+                        <Route path="/Tooele">
+                            <Tooele />
                         </Route>
                         <Route path="/results">
                             <Results />
