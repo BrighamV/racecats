@@ -89,15 +89,16 @@ class ParkCity extends React.Component{
                     Details coming Summer 2022<br/><br/>
                     </div>
                     </div>
-                    <h2>Park City running Club is looking for:</h2><br/><br/>
-                    - Two head Coaches - Elementary(3-5th) or Middle(6-8th)<br/>
-                    - Paid and Volunteer Coaches - Elementary(3-5th) or Middle(6-8th)<br/><br/>
-                    Contact Coach T at 435.655.1024 or Coach Jami at 801-787-8479 to learn more and help support a local Youth
-                    running program. 
+                  
 
                     <div className="picture_four"></div>
 
                 </div>
+                <h2>Park City running Club is looking for:</h2><br/><br/>
+                    - Two head Coaches - Elementary(3-5th) or Middle(6-8th)<br/>
+                    - Paid and Volunteer Coaches - Elementary(3-5th) or Middle(6-8th)<br/><br/>
+                    Contact Coach T at 435.655.1024 or Coach Jami at 801-787-8479 to learn more and help support a local Youth
+                    running program. 
             </div>
             
        

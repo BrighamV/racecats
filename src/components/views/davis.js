@@ -194,7 +194,12 @@ class Davis extends React.Component{
                     September 15th, no refunds will be given. <br/><br/>
                     </div>
                     </div>
-                    <h2>Davis Race Cats Elite Director</h2>
+                    
+                    <div className="picture_four"></div>
+            {/* <div className="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1W8441bf-2PO7ihSoSBoP9k2ANUpU_sjE" width="370" height="330"></iframe></div> */}
+
+                </div>
+                <h2>Davis Race Cats Elite Director</h2>
                     <h3>Jami Caldwell</h3>
                     "I started running in 8th grade. It started out as a social thing--my friends were doing it. At my first
                      race, I got last place! That didn't sit well with me and I kept at it and was running varsity at the high
@@ -207,10 +212,8 @@ class Davis extends React.Component{
                      to Race Cats! I believe that I was blessed with a few of the BEST coaches in the nation. Both in High School
                       (Roger Buhrley) and in college (Patrick Shane). I'm really looking forward to paying it forward with these
                        awesome kids in Davis County."
-                    <div className="picture_four"></div>
-            <div className="map"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1W8441bf-2PO7ihSoSBoP9k2ANUpU_sjE" width="370" height="330"></iframe></div>
 
-                </div>
+                       <h4>Cotact coach Jami at jami.goracecats@gmail.com</h4>
             </div>
             
        

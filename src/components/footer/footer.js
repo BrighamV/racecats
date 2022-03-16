@@ -23,6 +23,10 @@ class Footer extends React.Component{
                 lname: lname,
                 email: email
             });
+            document.getElementById("fname").value = "";
+            document.getElementById("lname").value = "";
+            document.getElementById("email").value = "";
+            // window.location.reload();
         }
         return (
         <div className='footer'>

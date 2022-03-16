@@ -52,7 +52,9 @@ function App() {
             let li = document.createElement('li');
             let fname = document.createElement('span');
             let lname = document.createElement('span');
+            lname.className = "last-name";
             let email = document.createElement('span');
+            email.className = "list-of-emails";
             let cross =document.createElement('button');
 
 

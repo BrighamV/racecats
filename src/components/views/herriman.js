@@ -155,12 +155,13 @@ class Herriman extends React.Component{
                     September 15th, no refunds will be given. <br/><br/>
                     </div>
                     </div>
-                    <h2>Race Cats Vice President and Herriman Race CatsDirector</h2>
-                    <h3>Caisa Brown</h3>
+                    
                    
                     <div className="picture_four"></div>
 
                 </div>
+                <h2>Race Cats Vice President and Herriman Race CatsDirector</h2>
+                    <h3>Caisa Brown</h3>
             </div>
             
        

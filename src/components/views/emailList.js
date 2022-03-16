@@ -28,11 +28,11 @@ import './main.css';
         <div className="content">
             
             <h1>Race Cats Emails</h1>
-            <div className="main-content-border">
+            <div className="email-list">
                 <p className="main-content"></p>
                 <div id="test"></div>
-            </div>
             {show()}
+            </div>
         </div>
         )
     }

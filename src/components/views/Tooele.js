@@ -68,12 +68,13 @@ class Tooele extends React.Component{
                    
                     </div>
                     </div>
-                    <h2>Race Cats Tooele Director:</h2>
-                    <h3>Mary Dangerfield</h3>
+                    
                     
                     <div className="picture_four"></div>
 
                 </div>
+                <h2>Race Cats Tooele Director:</h2>
+                    <h3>Mary Dangerfield</h3>
             </div>
             
        

@@ -26,24 +26,12 @@ class Alpine extends React.Component{
                     </div>
                     </div>
                     <div className="picture_two"></div>
-                    <div className="three">
-                        <div className="shadow">
-                    
-                    
-                
-                    </div>
-                    </div>
-                    <div className="picture_three"></div>
-                    <div className="four">
-                        <div className="shadow">
-                    
-                    </div>
-                    </div>
-                    <h2>Race Cats Alpine/Highland Director</h2>
-                    <h3>Courtney Pugmire Meldrum</h3>                  
-                    <div className="picture_four"></div>
+                   
+                 
 
                 </div>
+                <h2>Race Cats Alpine/Highland Director</h2>
+                    <h3>Courtney Pugmire Meldrum</h3>   
             </div>
             
        
