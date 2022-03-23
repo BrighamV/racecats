@@ -98,7 +98,6 @@ function App() {
         console.log(usr);
         db.collection('coach').get().then((snapshot) => {   //get grabs the data from the database
             snapshot.docs.forEach(doc => {
-                // console.log("in loop")
              console.log(doc.data().username);
              if (doc.data().username === usr && doc.data().password === pass) {
                  console.log("usr is same")
@@ -117,6 +116,7 @@ function App() {
     
 
     return(
+        // Router is what redirects the page
         <Router>
             <div className="app">
                 < Header />
