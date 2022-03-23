@@ -25,22 +25,7 @@ import { render } from '@testing-library/react';
 
 function App() {
    
-    // const add = () => {
-    //     console.log("made it to add");
-    //     let fname = document.getElementById("fname").value;
-    //     let lname = document.getElementById("lname").value;
-    //     let email = document.getElementById("email").value;
-    //     // console.log(fname);
-    //     // console.log(lname);
-    //     // console.log(email);
-    //     const db = firebase.firestore();
-    //     // db.collection("Athlete").doc().set()
-    //     db.collection('Athlete').add({         // add adds to the database
-    //         fname: fname,
-    //         lname: lname,
-    //         email: email
-    //     });
-    // }
+  // This is what builds the email list. It takes the data from firestore and puts it onto the page
 
    const display = (doc) => {
         const db = firebase.firestore();
@@ -89,20 +74,20 @@ function App() {
 
     }
 
+    // grabs each athlete to display onto the screen
     const show = () => {
 
-        // console.log("made it to show");
         
         const db = firebase.firestore();
         db.collection('Athlete').get().then((snapshot) => {   //get grabs the data from the database
             snapshot.docs.forEach(doc => {
-                // console.log("in loop")
              display(doc);
 
                 })
             })
     }
 
+    // checks if the username and password are correct
     const check = () => {
         const db = firebase.firestore();
 
@@ -117,7 +102,7 @@ function App() {
              console.log(doc.data().username);
              if (doc.data().username === usr && doc.data().password === pass) {
                  console.log("usr is same")
-                 window.location = "/#/emailList";
+                 window.location = "racecats/#/emailList";
              } else {
                  console.log("usr is diff")
                  document.querySelector(".error").innerHTML = "Please enter a valid login";

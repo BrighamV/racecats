@@ -1,22 +1,4 @@
 .header {
-    /* background-image: url("./banner.png");
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 250px;
-    padding-top: 30px;
-    padding-left: 30px; */
-    /* width: 95%;
-    top: 30px;
-    justify-content: center;
-    padding-top: 30px; 
-    padding-left: 30px;
-    background-image: url("./banner.png");
-    min-height: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 60px;
-    position: relative; */
     background-color: rgb(170, 170, 165);
 
     display: grid;

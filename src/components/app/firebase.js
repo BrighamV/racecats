@@ -1,5 +1,5 @@
 import firebase from "firebase/app";
-import "firebase/firestore"
+import "firebase/firestore";
 
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
@@ -15,7 +15,7 @@ const firebaseConfig = {
     measurementId: "G-F0J5JJ11W7"
   };
 
-  firebase.initializeApp(firebaseConfig)
+  firebase.initializeApp(firebaseConfig);
 
   // const app = initializeApp(firebaseConfig);
   // const analytics = getAnalytics(app);
