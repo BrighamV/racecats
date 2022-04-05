@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/racecats/static/css/main.c2c24e33.css",
-    "main.js": "/racecats/static/js/main.c5ecde1e.js",
+    "main.js": "/racecats/static/js/main.efd67e47.js",
     "static/media/track.jpg": "/racecats/static/media/track.a4ec21b997c9bb27b17a.jpg",
     "static/media/starting_line.jpg": "/racecats/static/media/starting_line.de80304054965bd10980.jpg",
     "static/media/runner.png": "/racecats/static/media/runner.e94743486e7e0fa0557f.png",
@@ -10,10 +10,10 @@
     "static/media/face.png": "/racecats/static/media/face.4688f72d9a631a277b98.png",
     "index.html": "/racecats/index.html",
     "main.c2c24e33.css.map": "/racecats/static/css/main.c2c24e33.css.map",
-    "main.c5ecde1e.js.map": "/racecats/static/js/main.c5ecde1e.js.map"
+    "main.efd67e47.js.map": "/racecats/static/js/main.efd67e47.js.map"
   },
   "entrypoints": [
     "static/css/main.c2c24e33.css",
-    "static/js/main.c5ecde1e.js"
+    "static/js/main.efd67e47.js"
   ]
 }
